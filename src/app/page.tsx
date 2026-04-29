@@ -1,5 +1,25 @@
 import { Header } from "@/components/layout/header/Header";
 import Image from "next/image";
+import { Button } from "@/components/ui/Button";
+
+const courseFeatures = [
+  {
+    id: "individual",
+    text: "Індивідуальне навчання",
+  },
+  {
+    id: "practice",
+    text: "Практика на реальних моделях",
+  },
+  {
+    id: "certificate",
+    text: "Сертифікат про проходження",
+  },
+  {
+    id: "support",
+    text: "Підтримка після курсу",
+  },
+];
 
 export default function Home() {
   return (
@@ -59,10 +79,66 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section
-        id="education"
-        className="h-screen bg-foreground px-32"
-      ></section>
+
+      <section id="education" className="py-32 bg-foreground">
+        <div className="max-w-[1232]  flex flex-1 gap-x-20 justify-center items-center mx-auto">
+          <div className="max-w-[544]">
+            <p className="text-accent uppercase tracking-widest">
+              Для майстрів
+            </p>
+            <h2 className="mt-4 font-accent italic text-5xl font-light text-background">
+              Навчання та майстер-класи
+            </h2>
+            <ul className="flex flex-col gap-y-6 mt-8 max-w-[544] text-grayCostom ">
+              <li>
+                <p>
+                  Передаємо свій досвід та техніки преміального нарощування
+                  волосся майстрам, які прагнуть вийти на новий рівень.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Індивідуальний підхід до кожної учениці, практика на моделях,
+                  та підтримка після завершення курсу.
+                </p>
+              </li>
+            </ul>
+            <ul className=" text-grayCostom flex flex-col gap-y-4 mt-10">
+              {courseFeatures.map((item) => (
+                <li
+                  key={item.id}
+                  className="relative pl-6 before:content-[''] 
+              before:block before:w-2 before:h-2 before:bg-accent  
+               before:absolute  before:top-1/2
+   before:-translate-y-1/2  before:left-0 "
+                >
+                  <p>{item.text}</p>
+                </li>
+              ))}
+            </ul>
+            <Button className="mt-10">Записатися на консультацію</Button>
+          </div>
+          <div className="flex items-start gap-x-4">
+            <div className="relative w-[280px] h-[374px] overflow-hidden">
+              <Image
+                src="/images/studio-owner-ligth.webp"
+                alt="studio owner"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+
+            <div className="relative w-[280px] h-[374px] overflow-hidden mt-4">
+              <Image
+                src="/images/hair.webp"
+                alt="Description of the image"
+                fill
+                className="object-cover scale-[1.01]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
