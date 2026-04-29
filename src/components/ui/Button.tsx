@@ -1,4 +1,12 @@
-export const Button = ({ className, type = "button", children }) => {
+export const Button = ({
+  className,
+  type = "button",
+  children,
+}: {
+  className?: string;
+  type?: "button" | "submit" | "reset";
+  children: React.ReactNode;
+}) => {
   return (
     <button
       type={type}
