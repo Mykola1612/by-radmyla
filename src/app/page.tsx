@@ -25,7 +25,40 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <section className="flex flex-1 max-w-[1232] mx-auto gap-x-20 py-32 justify-center items-center">
+      <section className="h-screen w-full relative flex items-center justify-center">
+        <Image
+          src="/images/premium-hair-salon-bg.webp"
+          alt="Description of the image"
+          fill
+          className="object-cover absolute -z-20"
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,_rgba(0,0,0,0.8)_0%,_rgba(0,0,0,0.3)_50%,_transparent_100%)]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
+
+        <div className="max-w-[664] relative z-10 px-6 text-center flex flex-col items-center gap-y-6">
+          <h2 className="text-accent uppercase tracking-widest">
+            Ексклюзивна студія краси
+          </h2>
+          <h1 className="font-accent italic text-6xl  text-background  [text-shadow:_1px_1px_0_#000,_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000]">
+            Преміальне нарощування волосся
+          </h1>
+          <p className="text-grayCostom text-[18px]">
+            Натуральність, яку неможливо відрізнити від власного волосся.
+            Індивідуальний підхід до кожної клієнтки.
+          </p>
+          <a
+            href="#hair"
+            className="block py-3 px-6 bg-accent text-background tracking-wider uppercase  hover:text-primary hover:text-foreground transition-colors"
+          >
+            Дізнатися Більше
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="founder"
+        className="flex flex-1 max-w-[1232] mx-auto gap-x-20 py-32 justify-center items-center"
+      >
         <Image
           src="/images/studio-owner.webp"
           alt="Description of the image"
