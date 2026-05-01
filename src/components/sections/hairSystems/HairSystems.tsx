@@ -52,7 +52,9 @@ export const HairSystems = () => {
             </p>
           </div>
 
-          <Button className="uppercase">Записатися на консультацію</Button>
+          <Button className="uppercase  focus-visible:ring-offset-foreground  hover:bg-accentHover focus:bg-accentHover hover:text-primary/80 focus:text-primary/80">
+            Записатися на консультацію
+          </Button>
         </div>
       </div>
     </section>
