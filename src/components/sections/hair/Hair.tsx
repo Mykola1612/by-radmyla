@@ -27,6 +27,7 @@ export const Hair = () => {
                   src="/images/hair-style-01.webp"
                   alt="Результат нарощування волосся: стильне фарбування у сірий колір та об'єм"
                   fill
+                  sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
                 />
               </div>
 
@@ -35,6 +36,7 @@ export const Hair = () => {
                   src="/images/hair-style-02.webp"
                   alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
                   fill
+                  sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
                 />
               </div>
             </div>
@@ -46,6 +48,7 @@ export const Hair = () => {
                   src="/images/hair-style-03.webp"
                   alt="Довгий блонд з накрученими локонами після процедури нарощування волосся"
                   fill
+                  sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
                 />
               </div>
 
@@ -54,6 +57,7 @@ export const Hair = () => {
                   src="/images/hair-style-04.webp"
                   alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
                   fill
+                  sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
                 />
               </div>
             </div>
