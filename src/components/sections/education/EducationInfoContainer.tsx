@@ -23,7 +23,7 @@ export const EducationInfoContainer = () => {
         </li>
       </ul>
       <EducationInfoList />
-      <Button className="mt-10">Записатися на консультацію</Button>
+      <Button className="mt-10 uppercase">Записатися на консультацію</Button>
     </div>
   );
 };

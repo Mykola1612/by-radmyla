@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui";
+
 export const HairSystems = () => {
   return (
     <section id="systems" className="py-24 md:py-32 bg-foreground ">
@@ -14,6 +16,22 @@ export const HairSystems = () => {
             Преміальні системи заміщення волосся, створені індивідуально під
             вас. Непомітний результат, максимальний комфорт.
           </p>
+        </div>
+
+        <div className="border border-accent w-full  flex flex-col gap-y-10 justify-center items-center text-center  py-12 px-10 sm:px-12 md:py-16 ">
+          <div className=" flex flex-col gap-y-4 justify-center items-center text-center">
+            <h3 className="text-grayCostom uppercase tracking-widest">
+              Вартість
+            </h3>
+            <p className="font-accent italic font-light  text-background  text-3xl  md:text-4xl lg:text-5xl ">
+              200€ – 500€
+            </p>
+            <p className="max-w-[672px] text-grayCostom md:text-lg">
+              Точна вартість визначається після консультації
+            </p>
+          </div>
+
+          <Button className="uppercase">Записатися на консультацію</Button>
         </div>
       </div>
     </section>
