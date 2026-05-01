@@ -20,6 +20,7 @@
   --color-accent: #8b7969;
   --color-info: #4a4a4a;
   --color-grayCostom: #cccccc;
+  --color-borderLink: #2a2a2a;
   --font-accent: var(--font-cormorant-garamond);
 }
 
@@ -36,4 +37,10 @@ body {
   font-family: var(--font-montserrat);
   font-weight: 400;
   font-size: 16px;
+}
+
+@layer base {
+  a {
+    display: block;
+  }
 }

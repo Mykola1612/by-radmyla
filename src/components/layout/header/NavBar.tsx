@@ -1,18 +1,18 @@
-const navItems = [
-  { label: "Нарощування волосся", href: "#hair" },
-  { label: "Hair Systems", href: "#systems" },
-  { label: "Засновниця", href: "#founder" },
-  { label: "Навчання", href: "#education" },
-  { label: "Контакти", href: "#contact" },
-];
+import Link from "next/link";
 
-export function NavBar() {
+export function NavBar({
+  navItems,
+  className = "",
+}: {
+  navItems: { label: string; href: string }[];
+  className?: string;
+}) {
   return (
     <nav>
-      <ul className="text-background flex gap-x-8">
+      <ul className={`text-background flex flex-col ${className}`}>
         {navItems.map((item) => (
           <li key={item.href}>
-            <a href={item.href}>{item.label}</a>
+            <Link href={item.href}>{item.label}</Link>
           </li>
         ))}
       </ul>
