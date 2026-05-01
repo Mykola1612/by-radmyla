@@ -64,7 +64,7 @@ export const Hair = () => {
           </li>
         </ul>
 
-        <ul className="flex flex-col w-[342px]  gap-y-6 justify-between items-center sm:flex-row sm:gap-x-1 md:gap-y-0 md:w-[692px] lg:w-[948px] xl:w-[1204px]">
+        <ul className="flex flex-col sm:w-[342px]  gap-y-6 justify-between items-center sm:flex-row sm:gap-x-1 md:gap-y-0 md:w-[692px] lg:w-[948px] xl:w-[1204px]">
           <li>
             <div className="flex gap-y-2 flex-col justify-center items-center xs:flex-row xs:gap-x-1 xs:gap-y-0">
               <div className="relative w-[180px] h-[180px]  sm:w-[104px] sm:h-[104px] md:w-[230px] md:h-[230px] lg:w-[315px] lg:h-[315px] xl:w-[400px] xl:h-[400px]">

@@ -18,6 +18,27 @@ export const HairSystems = () => {
           </p>
         </div>
 
+        <ul className="w-full text-grayCostom italic text-sm uppercase  flex justify-between  flex-col gap-y-6 md:flex-row md:gap-x-8 md:gap-y-0 ">
+          <li className="border border-accent flex flex-col gap-y-3 justify-center items-center w-full py-8 text-center px-8">
+            <p className="text-3xl  lg:text-4xl   font-accent  text-accent">
+              100%
+            </p>
+            <p className="text-[14px]">Натуральне волосся</p>
+          </li>
+          <li className="border border-accent flex flex-col gap-y-3 justify-center items-center w-full py-8 text-center px-8">
+            <p className="text-3xl  lg:text-4xl   font-accent  text-accent">
+              24/7
+            </p>
+            <p className="text-[14px]">Комфортне носіння</p>
+          </li>
+          <li className="border border-accent flex flex-col gap-y-3 justify-center items-center w-full py-8 text-center px-8">
+            <p className="text-3xl  lg:text-4xl   font-accent  text-accent  ">
+              ∞
+            </p>
+            <p className="text-[14px]">Індивідуальний дизайн</p>
+          </li>
+        </ul>
+
         <div className="border border-accent w-full  flex flex-col gap-y-10 justify-center items-center text-center  py-12 px-10 sm:px-12 md:py-16 ">
           <div className=" flex flex-col gap-y-4 justify-center items-center text-center">
             <h3 className="text-grayCostom uppercase tracking-widest">
