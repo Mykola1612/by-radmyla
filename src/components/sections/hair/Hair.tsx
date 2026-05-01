@@ -70,7 +70,7 @@ export const Hair = () => {
               <div className="relative w-[180px] h-[180px]  sm:w-[104px] sm:h-[104px] md:w-[230px] md:h-[230px] lg:w-[315px] lg:h-[315px] xl:w-[400px] xl:h-[400px]">
                 <Image
                   src="/images/hair-extension.webp"
-                  alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
+                  alt="Натуральне волосся для нарощування у зрізах (пучках)"
                   fill
                   sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
                 />
@@ -82,7 +82,7 @@ export const Hair = () => {
               <div className="relative w-[180px] h-[180px]  sm:w-[104px] sm:h-[104px] md:w-[230px] md:h-[230px] lg:w-[315px] lg:h-[315px] xl:w-[400px] xl:h-[400px] ">
                 <Image
                   src="/images/salon.webp"
-                  alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
+                  alt="Інтер'єр професійної студії нарощування волосся"
                   fill
                   sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
                 />
@@ -94,7 +94,7 @@ export const Hair = () => {
               <div className="relative w-[180px] h-[180px] sm:w-[104px] sm:h-[104px] md:w-[230px] md:h-[230px] lg:w-[315px] lg:h-[315px] xl:w-[400px] xl:h-[400px]">
                 <Image
                   src="/images/bang.webp"
-                  alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
+                  alt="Результат нарощування чубчика, вигляд до та після"
                   fill
                   sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
                 />
