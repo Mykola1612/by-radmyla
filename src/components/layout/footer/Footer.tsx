@@ -1,5 +1,5 @@
 import { Logo } from "@/components/brand/Logo";
-import { NavBar } from "../header/NavBar";
+import { NavBar } from "../NavBar";
 
 const navItems = [
   { label: "Нарощування волосся", href: "#hair" },
@@ -20,7 +20,7 @@ export const Footer = () => {
         </div>
         <div className="flex-1">
           <p className="text-background">Послуги</p>
-          <NavBar navItems={navItems} className="mt-6  gap-y-4" />
+          <NavBar navItems={navItems} className="mt-6  gap-y-1.5" />
         </div>
         <div className="flex-1">
           <p className="text-background">Слідкуйте за нами</p>
@@ -56,9 +56,12 @@ export const Footer = () => {
         </div>
       </div>
       <div className="container-custom">
-        <div className="text-grayCostom mt-12 border-t border-accent/40 pt-8 flex flex-col gap-y-4 items-center justify-center text-center md:flex-row md:justify-between md:gap-y-0">
+        <div
+          className="text-grayCostom mt-12 border-t border-accent/40 pt-8 flex flex-col gap-y-4 items-center
+         justify-center text-center md:flex-row md:justify-between md:gap-y-0"
+        >
           <p> © 2026 HAIRSTUDIO. Всі права захищені.</p>
-          <p>Преміум послуги краси у  Августові</p>
+          <p>Преміум послуги краси у Августові</p>
         </div>
       </div>
     </footer>

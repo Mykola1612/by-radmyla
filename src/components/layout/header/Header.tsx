@@ -1,5 +1,5 @@
 import { Logo } from "../../brand/Logo";
-import { NavBar } from "./NavBar";
+import { NavBar } from "../NavBar";
 
 const navItems = [
   { label: "Нарощування волосся", href: "#hair" },
