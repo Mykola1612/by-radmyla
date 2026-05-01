@@ -64,6 +64,45 @@ export const Hair = () => {
           </li>
         </ul>
 
+        <ul className="flex flex-col w-[342px]  gap-y-6 justify-between items-center sm:flex-row sm:gap-x-1 md:gap-y-0 md:w-[692px] lg:w-[948px] xl:w-[1204px]">
+          <li>
+            <div className="flex gap-y-2 flex-col justify-center items-center xs:flex-row xs:gap-x-1 xs:gap-y-0">
+              <div className="relative w-[180px] h-[180px]  sm:w-[104px] sm:h-[104px] md:w-[230px] md:h-[230px] lg:w-[315px] lg:h-[315px] xl:w-[400px] xl:h-[400px]">
+                <Image
+                  src="/images/hair-extension.webp"
+                  alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
+                  fill
+                  sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="flex gap-y-2 flex-col justify-center items-center xs:flex-row xs:gap-x-1 xs:gap-y-0">
+              <div className="relative w-[180px] h-[180px]  sm:w-[104px] sm:h-[104px] md:w-[230px] md:h-[230px] lg:w-[315px] lg:h-[315px] xl:w-[400px] xl:h-[400px] ">
+                <Image
+                  src="/images/salon.webp"
+                  alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
+                  fill
+                  sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="flex gap-y-2 flex-col justify-center items-center xs:flex-row xs:gap-x-1 xs:gap-y-0">
+              <div className="relative w-[180px] h-[180px] sm:w-[104px] sm:h-[104px] md:w-[230px] md:h-[230px] lg:w-[315px] lg:h-[315px] xl:w-[400px] xl:h-[400px]">
+                <Image
+                  src="/images/bang.webp"
+                  alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
+                  fill
+                  sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+
         <div className="bg-[#F8F8F8] w-full  flex flex-col gap-y-10 justify-center items-center text-center  py-12 px-10 sm:px-12 md:py-16 ">
           <div className=" flex flex-col gap-y-4 justify-center items-center text-center">
             <h3 className="text-info uppercase tracking-widest">Вартість</h3>
