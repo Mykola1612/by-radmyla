@@ -23,22 +23,38 @@ export const Hair = () => {
           <li>
             <div className="flex gap-y-2 flex-col justify-center items-center xs:flex-row xs:gap-x-1 xs:gap-y-0">
               <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[170px] sm:h-[226px] lg:w-[234px] lg:h-[312px] xl:w-[298px] xl:h-[398px]">
-                <Image fill className="border-2 border-amber-300" />
+                <Image
+                  src="/images/hair-style-01.webp"
+                  alt="Результат нарощування волосся: стильне фарбування у сірий колір та об'єм"
+                  fill
+                />
               </div>
 
               <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[170px] sm:h-[226px] lg:w-[234px] lg:h-[312px] xl:w-[298px] xl:h-[398px]">
-                <Image fill className="border-2 border-amber-300" />
+                <Image
+                  src="/images/hair-style-02.webp"
+                  alt="Нарощування волосся натурального коричневого відтінку: густота та природний вигляд"
+                  fill
+                />
               </div>
             </div>
           </li>
           <li>
             <div className="flex gap-y-2 flex-col justify-center items-center xs:flex-row xs:gap-x-1 xs:gap-y-0">
               <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[170px] sm:h-[226px] lg:w-[234px] lg:h-[312px] xl:w-[298px] xl:h-[398px]">
-                <Image fill className="border-2 border-amber-300" />
+                <Image
+                  src="/images/hair-style-03.webp"
+                  alt="Довгий блонд з накрученими локонами після процедури нарощування волосся"
+                  fill
+                />
               </div>
 
               <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[170px] sm:h-[226px] lg:w-[234px] lg:h-[312px] xl:w-[298px] xl:h-[398px]">
-                <Image fill className="border-2 border-amber-300" />
+                <Image
+                  src="/images/hair-style-04.webp"
+                  alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
+                  fill
+                />
               </div>
             </div>
           </li>
