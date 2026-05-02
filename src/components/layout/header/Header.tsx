@@ -49,7 +49,7 @@ export function Header() {
       </div>
 
       <div
-        className={`fixed h-full w-full rounded-b-lg z-20 pointer-events-auto lg:hidden transition-transform duration-500 ${isOpen ? "translate-x-0 " : "translate-x-full"} `}
+        className={`fixed h-full w-full rounded-b-lg z-20 pointer-events-auto lg:hidden transition-transform duration-500 ${isOpen ? "translate-x-0  visible " : "translate-x-full invisible"} `}
         onClick={closeMenu}
       >
         <div
@@ -75,7 +75,7 @@ export function Header() {
               classNamePadding="px-4"
               onClick={closeMenu}
             />
-            <div className="px-4">
+            <div className="px-4 ">
               <p className="text-background">Слідкуйте за нами</p>
               <div className="flex gap-x-4 mt-6">
                 <a
