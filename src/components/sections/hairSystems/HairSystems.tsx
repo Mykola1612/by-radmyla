@@ -31,6 +31,9 @@ export const HairSystems = () => {
               />
               <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_50%,rgba(0,0,0,0)_100%)] absolute w-full h-full"></div>
               <div className="bg-[linear-gradient(270deg,#1a1a1a_0%,rgba(26,26,26,0)_1%,transparent_20%)] absolute w-full h-full"></div>
+              <p className="absolute bottom-6 left-6  text-background py-2">
+                Натуральне волосся
+              </p>
             </div>
           </li>
           <li>
@@ -44,6 +47,9 @@ export const HairSystems = () => {
               />
               <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_50%,rgba(0,0,0,0)_100%)] absolute w-full h-full"></div>
               <div className="bg-[linear-gradient(270deg,#1a1a1a_0%,rgba(26,26,26,0)_1%,transparent_20%)] absolute w-full h-full"></div>
+              <p className="absolute bottom-6 left-6  text-background py-2">
+                Hair Systems
+              </p>
             </div>
           </li>
           <li>
@@ -57,6 +63,9 @@ export const HairSystems = () => {
               />
               <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_50%,rgba(0,0,0,0)_100%)] absolute w-full h-full"></div>
               <div className="bg-[linear-gradient(270deg,#1a1a1a_0%,rgba(26,26,26,0)_1%,transparent_20%)] absolute w-full h-full"></div>
+              <p className="absolute bottom-6 left-6  text-background py-2">
+                Індивідуальний підбір
+              </p>
             </div>
           </li>
         </ul>
