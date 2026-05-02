@@ -72,7 +72,7 @@ export function Header() {
 
         <button
           type="button"
-          className="group p-0 border-none line-height-0 bg-transparent lg:hidden   focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
+          className="group p-0 border-none line-height-0 bg-transparent lg:hidden  cursor-pointer  focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
           onClick={openMenu}
           aria-expanded={isOpen}
         >
@@ -89,7 +89,7 @@ export function Header() {
       {isMounted && (
         <FocusTrap>
           <div
-            className={`fixed  h-full w-full rounded-b-lg z-[100] lg:hidden transition-all duration-500 ${isOpen ? "translate-x-0  " : "translate-x-full pointer-events-none"} `}
+            className={`fixed   h-full w-full rounded-b-lg z-[100] lg:hidden transition-all duration-500 ${isOpen ? "translate-x-0  " : "translate-x-full pointer-events-none"} `}
             onMouseDown={(e) => {
               if (e.target === e.currentTarget) {
                 closeMenu();
@@ -103,7 +103,7 @@ export function Header() {
               <button
                 type="button"
                 aria-label="close menu"
-                className="absolute top-6 right-6 group p-0 border-none line-height-0 bg-transparent lg:hidden   focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
+                className="absolute top-6 right-6 cursor-pointer group p-0 border-none line-height-0 bg-transparent lg:hidden   focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
                 onClick={closeMenu}
               >
                 <svg
