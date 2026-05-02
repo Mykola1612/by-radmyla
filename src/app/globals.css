@@ -46,3 +46,6 @@ body {
     display: block;
   }
 }
+html {
+  scrollbar-gutter: stable;
+}
