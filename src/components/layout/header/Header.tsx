@@ -24,8 +24,6 @@ export function Header() {
     document.body.style.overflow = "unset";
   };
 
-  const useEfeckt = () => {};
-
   return (
     <header className="w-full h-16 sticky top-0 z-50 flex justify-center bg-primary">
       <div
@@ -53,7 +51,7 @@ export function Header() {
       <div
         className={`fixed h-full w-full rounded-b-lg z-20 pointer-events-auto lg:hidden transition-transform duration-500 ${isOpen ? "translate-x-0 " : "translate-x-full"} `}
       >
-        <div className="  w-full sm:w-4/7 bg-[rgb(20,19,19)] h-full p-4 z-50 absolute right-0 select-none">
+        <div className="  w-full sm:w-4/7 bg-[rgb(20,19,19)] h-full p-4 z-50 absolute right-0 ">
           <button
             type="button"
             aria-label="close menu"
@@ -70,10 +68,11 @@ export function Header() {
             <NavBar
               navItems={navItems}
               className="flex flex-col gap-y-4"
-              classNamePadding="px-4 select-text"
+              classNamePadding="px-4"
+              onClick={closeMenu}
             />
             <div className="px-4">
-              <p className="text-background select-text ">Слідкуйте за нами</p>
+              <p className="text-background">Слідкуйте за нами</p>
               <div className="flex gap-x-4 mt-6">
                 <a
                   href="https://www.instagram.com/rsalon.beautystudio?igsh=ZjJmdnMyNnF4b2F6"
