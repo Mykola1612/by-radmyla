@@ -21,7 +21,7 @@ export const HairSystems = () => {
 
         <ul className="flex flex-col w-full gap-y-6 justify-center items-center md:flex-row md:gap-x-6 md:gap-y-0">
           <li>
-            <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
+            <div className="relative w-[170px] h-[226px] sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
               <Image
                 src="/images/girl-01.webp"
                 alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
@@ -37,7 +37,7 @@ export const HairSystems = () => {
             </div>
           </li>
           <li>
-            <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
+            <div className="relative w-[170px] h-[226px]  sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
               <Image
                 src="/images/girl-02.webp"
                 alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
@@ -53,7 +53,7 @@ export const HairSystems = () => {
             </div>
           </li>
           <li>
-            <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
+            <div className="relative w-[170px] h-[226px]  sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
               <Image
                 src="/images/girl-03.webp"
                 alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
