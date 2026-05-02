@@ -20,16 +20,18 @@ export function Header() {
     setIsMounted(true);
     setTimeout(() => {
       setIsOpen(true);
+      document.body.classList.add("overflow-hidden", "select-none");
     }, 10);
-    document.body.classList.add("overflow-hidden", "select-none");
   };
 
   const closeMenu = () => {
     setIsOpen(false);
+    document.body.classList.remove("overflow-hidden");
+    window.getSelection()?.removeAllRanges();
     setTimeout(() => {
       setIsMounted(false);
+      document.body.classList.remove("select-none");
     }, 500);
-    document.body.classList.remove("overflow-hidden", "select-none");
   };
 
   useEffect(() => {
@@ -72,6 +74,7 @@ export function Header() {
           type="button"
           className="group p-0 border-none line-height-0 bg-transparent lg:hidden   focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
           onClick={openMenu}
+          aria-expanded={isOpen}
         >
           <svg
             className="stroke-background  group-hover:stroke-accentHover group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none group-focus-visible:duration-0"
@@ -86,11 +89,15 @@ export function Header() {
       {isMounted && (
         <FocusTrap>
           <div
-            className={`fixed select-text h-full w-full rounded-b-lg z-20 lg:hidden transition-all duration-500 ${isOpen ? "translate-x-0  " : "translate-x-full"} `}
-            onClick={closeMenu}
+            className={`fixed  h-full w-full rounded-b-lg z-[100] lg:hidden transition-all duration-500 ${isOpen ? "translate-x-0  " : "translate-x-full pointer-events-none"} `}
+            onMouseDown={(e) => {
+              if (e.target === e.currentTarget) {
+                closeMenu();
+              }
+            }}
           >
             <div
-              className="  w-full sm:w-4/7 bg-[rgb(20,19,19)] h-full p-4 z-50 absolute right-0 "
+              className="  w-full sm:w-4/7 bg-[rgb(20,19,19)] h-full p-4 z-50 absolute right-0 select-text"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -122,8 +129,7 @@ export function Header() {
                     <a
                       href="https://www.instagram.com/rsalon.beautystudio?igsh=ZjJmdnMyNnF4b2F6"
                       target="_blank"
-                      rel="
-          noopener noreferrer nofollow"
+                      rel="noopener noreferrer nofollow"
                       className="group border border-borderLink w-12 h-12 flex justify-center items-center  focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
                     >
                       <svg className="w-5 h-5 stroke-grayCostom group-hover:stroke-accentHover group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none group-focus-visible:duration-0">
