@@ -49,7 +49,7 @@ export function Header() {
       </div>
 
       <div
-        className={`fixed h-full w-full rounded-b-lg z-20 pointer-events-auto lg:hidden transition-transform duration-500 ${isOpen ? "translate-x-0  visible " : "translate-x-full invisible"} `}
+        className={`fixed h-full w-full rounded-b-lg z-20 pointer-events-auto lg:hidden transition-all duration-500 ${isOpen ? "translate-x-0  visible " : "translate-x-full invisible"} `}
         onClick={closeMenu}
       >
         <div
