@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui";
+import Image from "next/image";
 
 export const HairSystems = () => {
   return (
@@ -17,6 +18,42 @@ export const HairSystems = () => {
             вас. Непомітний результат, максимальний комфорт.
           </p>
         </div>
+
+        <ul className="flex flex-col w-full gap-y-6 justify-center items-center md:flex-row md:gap-x-6 md:gap-y-0">
+          <li>
+            <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
+              <Image
+                src="/images/girl-01.webp"
+                alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
+                fill
+                className="object-cover "
+                sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
+              />
+            </div>
+          </li>
+          <li>
+            <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
+              <Image
+                src="/images/girl-02.webp"
+                alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
+                fill
+                className="object-cover "
+                sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
+              />
+            </div>
+          </li>
+          <li>
+            <div className="relative w-[170px] h-[226px] xs:w-[140px] xs:h-[186px] sm:w-[342px] sm:h-[456px] md:w-[224px] md:h-[298px] lg:w-[310px] lg:h-[412px] xl:w-[395px] xl:h-[526px]">
+              <Image
+                src="/images/girl-03.webp"
+                alt="Розкішне довге чорне волосся: результат нарощування для максимальної довжини"
+                fill
+                className="object-cover "
+                sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
+              />
+            </div>
+          </li>
+        </ul>
 
         <ul className="w-full text-grayCostom italic text-sm uppercase  flex justify-between  flex-col gap-y-6 md:flex-row md:gap-x-8 md:gap-y-0 ">
           <li className="border border-borderLink flex flex-col gap-y-3 justify-center items-center w-full py-8 text-center px-8">
