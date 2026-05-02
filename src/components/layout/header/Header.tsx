@@ -25,15 +25,21 @@ export function Header() {
   };
 
   const closeMenu = () => {
-    setIsMounted(false);
+    setIsOpen(false);
     setTimeout(() => {
-      setIsOpen(false);
-    }, 10);
+      setIsMounted(false);
+    }, 500);
     document.body.classList.remove("overflow-hidden", "select-none");
   };
 
   useEffect(() => {
     if (!isMounted) return;
+
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        closeMenu();
+      }
+    };
 
     const onKeyDown = (e) => {
       if (e.key === "Escape") {
@@ -41,8 +47,12 @@ export function Header() {
       }
     };
     window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("resize", handleResize);
+    };
   }, [isMounted]);
 
   return (
@@ -121,7 +131,7 @@ export function Header() {
                       </svg>
                     </a>
                     <a
-                      href=""
+                      href="#"
                       className="group border border-borderLink w-12 h-12 flex justify-center items-center  focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2    focus-visible:duration-0 "
                     >
                       <svg className="w-5 h-5 stroke-grayCostom group-hover:stroke-accentHover group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none group-focus-visible:duration-0">
