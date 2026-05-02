@@ -43,7 +43,7 @@ export function Header() {
       }
     };
 
-    const onKeyDown = (e) => {
+    const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         closeMenu();
       }
