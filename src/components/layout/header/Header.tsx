@@ -16,8 +16,12 @@ export function Header() {
         className="container-custom h-16
  flex items-center justify-between"
       >
-        <Logo />
-        <NavBar navItems={navItems} className="flex-row gap-x-8" />
+        <Logo className="px-1" />
+        <NavBar
+          navItems={navItems}
+          className="flex-row gap-x-4"
+          classNamePadding="px-4"
+        />
       </div>
     </header>
   );

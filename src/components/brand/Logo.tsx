@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export function Logo() {
+export function Logo({ className = "" }: { className?: string }) {
   return (
     <Link
       href="#"
-      className="group flex items-center cursor-pointer focus-visible:ring-accentHover focus-visible:ring-offset-foreground   transition-colors outline-none  focus-visible:ring-2  focus-visible:ring-offset-4    focus-visible:duration-0"
+      className={`group flex items-center cursor-pointer focus-visible:ring-accentHover   transition-colors outline-none  focus-visible:ring-2   focus-visible:duration-0 ${className}`}
     >
       <svg className="w-14 h-14 -mr-2">
         <use
@@ -13,7 +13,7 @@ export function Logo() {
         />
       </svg>
       <div className="flex">
-        <p className="text-background text-2xl  ">R</p>
+        <p className="text-background text-2xl">R</p>
         <p className="text-accent text-2xl group-hover:text-background  group-focus:text-background  group-focus-visible:duration-0 transition-colors duration-300">
           Salon
         </p>

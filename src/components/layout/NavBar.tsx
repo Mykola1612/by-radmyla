@@ -3,9 +3,11 @@ import Link from "next/link";
 export function NavBar({
   navItems,
   className = "",
+  classNamePadding = "",
 }: {
   navItems: { label: string; href: string }[];
   className?: string;
+  classNamePadding?: string;
 }) {
   return (
     <nav>
@@ -14,7 +16,7 @@ export function NavBar({
           <li key={item.href}>
             <Link
               href={item.href}
-              className="py-[5px] hover:text-accent  focus:text-accent  transition-colors duration-300 outline-none  focus-visible:ring-2  focus-visible:ring-offset-2 focus-visible:ring-accent   focus-visible:ring-offset-foreground  focus-visible:duration-0"
+              className={`py-[5px] hover:text-accent  focus:text-accent  transition-colors duration-300 outline-none  focus-visible:ring-2  focus-visible:ring-offset-2 focus-visible:ring-accent   focus-visible:ring-offset-foreground  focus-visible:duration-0 ${classNamePadding}`}
             >
               {item.label}
             </Link>

@@ -12,7 +12,7 @@ export const Footer = () => {
     <footer className="w-full bg-foreground py-16">
       <div className="container-custom flex flex-col gap-y-12 md:flex-row md:gap-x-12 md:gap-y-0">
         <div className="flex-1">
-          <Logo />
+          <Logo className="focus-visible:ring-offset-foreground focus-visible:ring-offset-4" />
           <p className="text-grayCostom mt-6">
             Преміальна студія нарощування волосся та індивідуальних систем
             заміщення.
