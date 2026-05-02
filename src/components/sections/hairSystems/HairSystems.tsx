@@ -29,6 +29,8 @@ export const HairSystems = () => {
                 className="object-cover "
                 sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
               />
+              <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_50%,rgba(0,0,0,0)_100%)] absolute w-full h-full"></div>
+              <div className="bg-[linear-gradient(270deg,#1a1a1a_0%,rgba(26,26,26,0)_1%,transparent_20%)] absolute w-full h-full"></div>
             </div>
           </li>
           <li>
@@ -40,6 +42,8 @@ export const HairSystems = () => {
                 className="object-cover "
                 sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
               />
+              <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_50%,rgba(0,0,0,0)_100%)] absolute w-full h-full"></div>
+              <div className="bg-[linear-gradient(270deg,#1a1a1a_0%,rgba(26,26,26,0)_1%,transparent_20%)] absolute w-full h-full"></div>
             </div>
           </li>
           <li>
@@ -51,6 +55,8 @@ export const HairSystems = () => {
                 className="object-cover "
                 sizes="(max-width: 480px) 140px, (max-width: 768px) 170px, (max-width: 1024px) 234px, 298px"
               />
+              <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_50%,rgba(0,0,0,0)_100%)] absolute w-full h-full"></div>
+              <div className="bg-[linear-gradient(270deg,#1a1a1a_0%,rgba(26,26,26,0)_1%,transparent_20%)] absolute w-full h-full"></div>
             </div>
           </li>
         </ul>
