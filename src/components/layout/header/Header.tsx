@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Logo } from "../../brand/Logo";
 import { NavBar } from "../NavBar";
 
@@ -13,8 +13,6 @@ const navItems = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {});
 
   const openMenu = () => {
     setIsOpen(true);
