@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Logo } from "../../brand/Logo";
 import { NavBar } from "../NavBar";
 
@@ -13,6 +13,8 @@ const navItems = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {});
 
   const openMenu = () => {
     setIsOpen(true);
@@ -50,8 +52,12 @@ export function Header() {
 
       <div
         className={`fixed h-full w-full rounded-b-lg z-20 pointer-events-auto lg:hidden transition-transform duration-500 ${isOpen ? "translate-x-0 " : "translate-x-full"} `}
+        onClick={closeMenu}
       >
-        <div className="  w-full sm:w-4/7 bg-[rgb(20,19,19)] h-full p-4 z-50 absolute right-0 ">
+        <div
+          className="  w-full sm:w-4/7 bg-[rgb(20,19,19)] h-full p-4 z-50 absolute right-0 "
+          onClick={(e) => e.stopPropagation()}
+        >
           <button
             type="button"
             aria-label="close menu"
