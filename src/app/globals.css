@@ -25,12 +25,24 @@
   --color-accentHover: #a68d7a;
   --font-accent: var(--font-cormorant-garamond);
 }
+@media (hover: none) {
+  *:hover {
+    color: revert !important;
+    background-color: revert !important;
+    opacity: revert !important;
+    transform: revert !important;
+  }
+}
 
 @utility container-custom {
   margin-inline: auto; /* Центрирование (mx-auto) */
   width: 100%;
   max-width: 1280px; /* Максимальная ширина */
   padding-inline: 24px; /* Отступы по бокам (px-4) */
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -45,7 +57,4 @@ body {
   a {
     display: block;
   }
-}
-html {
-  scrollbar-gutter: stable;
 }
