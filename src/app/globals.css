@@ -25,14 +25,6 @@
   --color-accentHover: #a68d7a;
   --font-accent: var(--font-cormorant-garamond);
 }
-@media (hover: none) {
-  *:hover {
-    color: revert !important;
-    background-color: revert !important;
-    opacity: revert !important;
-    transform: revert !important;
-  }
-}
 
 @utility container-custom {
   margin-inline: auto; /* Центрирование (mx-auto) */
@@ -56,5 +48,15 @@ body {
 @layer base {
   a {
     display: block;
+  }
+  @media (hover: none) {
+    *:hover {
+      /* Принудительно сбрасываем цвета и эффекты к исходным */
+      color: inherit !important;
+      background-color: transparent !important;
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
   }
 }
