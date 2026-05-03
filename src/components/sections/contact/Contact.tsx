@@ -1,24 +1,24 @@
 export const Contact = () => {
   return (
-    <section id="contact" className="py-24 md:py-32 bg-primary">
+    <section id="contact" className="bg-primary py-24 md:py-32">
       <div
-        className="flex flex-col gap-y-4 justify-center items-center text-center container-custom"
+        className="container-custom flex flex-col items-center justify-center gap-y-4 text-center"
       >
-        <p className="text-accent uppercase tracking-widest">Зв'язатися з нами</p>
+        <p className="tracking-widest text-accent uppercase">Зв'язатися з нами</p>
         <h2
-          className="font-accent italic font-light text-background text-3xl md:text-4xl lg:text-5xl"
+          className="font-accent text-3xl font-light text-background italic md:text-4xl lg:text-5xl"
         >
           Контакти{" "}
         </h2>
       </div>
-      <div className="mt-16 md:mt-24 container-custom">
+      <div className="container-custom mt-16 md:mt-24">
         <ul className="flex flex-col gap-y-8 text-xl">
           <li className="flex gap-x-5">
             <div
-              className="border border-borderLink w-12 h-12 flex justify-center items-center
-                flex-shrink-0"
+              className="flex h-12 w-12 flex-shrink-0 items-center justify-center border
+                border-borderLink"
             >
-              <svg className="w-5 h-5">
+              <svg className="h-5 w-5">
                 <use href="/assets/sprite.svg#icon-locate" />
               </svg>
             </div>
@@ -30,40 +30,40 @@ export const Contact = () => {
           </li>
           <li className="flex gap-x-5">
             <div
-              className="border border-borderLink w-12 h-12 flex justify-center items-center
-                flex-shrink-0"
+              className="flex h-12 w-12 flex-shrink-0 items-center justify-center border
+                border-borderLink"
             >
-              <svg className="w-5 h-5">
+              <svg className="h-5 w-5">
                 <use href="/assets/sprite.svg#icon-phone" />
               </svg>
             </div>
 
             <div>
               <h3 className="text-background">Телефон</h3>
-              <p className="text-grayCostom font-accent">+380 50 123 45 67</p>
+              <p className="font-accent text-grayCostom">+380 50 123 45 67</p>
             </div>
           </li>
           <li className="flex gap-x-5">
             <div
-              className="border border-borderLink w-12 h-12 flex justify-center items-center
-                flex-shrink-0"
+              className="flex h-12 w-12 flex-shrink-0 items-center justify-center border
+                border-borderLink"
             >
-              <svg className="w-5 h-5 stroke-accent">
+              <svg className="h-5 w-5 stroke-accent">
                 <use href="/assets/sprite.svg#icon-email" />
               </svg>
             </div>
 
             <div>
               <h3 className="text-background">Email</h3>
-              <p className="text-grayCostom font-accent">rsalonpl@gmail.com</p>
+              <p className="font-accent text-grayCostom">rsalonpl@gmail.com</p>
             </div>
           </li>
           <li className="flex gap-x-5">
             <div
-              className="border border-borderLink w-12 h-12 flex justify-center items-center
-                flex-shrink-0"
+              className="flex h-12 w-12 flex-shrink-0 items-center justify-center border
+                border-borderLink"
             >
-              <svg className="w-5 h-5">
+              <svg className="h-5 w-5">
                 <use href="/assets/sprite.svg#icon-clock" />
               </svg>
             </div>

@@ -8,7 +8,7 @@ export const HeroBg = () => {
         alt="Description of the image"
         fill
         priority
-        className="object-cover absolute -z-20"
+        className="absolute -z-20 object-cover"
       />
       <div
         className="absolute inset-0

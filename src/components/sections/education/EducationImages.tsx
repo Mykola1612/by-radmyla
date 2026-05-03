@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export const EducationImages = () => {
   return (
-    <div className="flex gap-y-4 flex-col sm:flex-row sm:gap-x-4 sm:gap-y-0">
+    <div className="flex flex-col gap-y-4 sm:flex-row sm:gap-x-4 sm:gap-y-0">
       <div
-        className="relative w-[260px] h-[348px] sm:w-[164px] sm:h-[218px] md:w-[352px] md:h-[470px]
-          lg:w-[216px] lg:h-[288px] xl:w-[280px] xl:h-[374px] overflow-hidden"
+        className="relative h-[348px] w-[260px] overflow-hidden sm:h-[218px] sm:w-[164px]
+          md:h-[470px] md:w-[352px] lg:h-[288px] lg:w-[216px] xl:h-[374px] xl:w-[280px]"
       >
         <Image
           src="/images/studio-owner-ligth.webp"
@@ -16,14 +16,14 @@ export const EducationImages = () => {
       </div>
 
       <div
-        className="relative w-[260px] h-[348px] sm:w-[164px] sm:h-[218px] md:w-[352px] md:h-[470px]
-          lg:w-[216px] lg:h-[288px] xl:w-[280px] xl:h-[374px] overflow-hidden sm:mt-4"
+        className="relative h-[348px] w-[260px] overflow-hidden sm:mt-4 sm:h-[218px] sm:w-[164px]
+          md:h-[470px] md:w-[352px] lg:h-[288px] lg:w-[216px] xl:h-[374px] xl:w-[280px]"
       >
         <Image
           src="/images/hair.webp"
           alt="Description of the image"
           fill
-          className="object-cover scale-[1.01]"
+          className="scale-[1.01] object-cover"
         />
       </div>
     </div>

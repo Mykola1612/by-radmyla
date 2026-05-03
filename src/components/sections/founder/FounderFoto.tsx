@@ -3,8 +3,8 @@ import Image from "next/image";
 export const FounderFoto = () => {
   return (
     <div
-      className="relative w-[260px] h-[325px] sm:w-[342px] sm:h-[428px] md:w-[720px] md:h-[900px]
-        lg:w-[448px] lg:h-[560px] xl:w-[576px] xl:h-[720px] overflow-hidden"
+      className="relative h-[325px] w-[260px] overflow-hidden sm:h-[428px] sm:w-[342px] md:h-[900px]
+        md:w-[720px] lg:h-[560px] lg:w-[448px] xl:h-[720px] xl:w-[576px]"
     >
       <Image
         src="/images/studio-owner.webp"

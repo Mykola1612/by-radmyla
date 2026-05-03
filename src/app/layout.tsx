@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${cormorantGaramond.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

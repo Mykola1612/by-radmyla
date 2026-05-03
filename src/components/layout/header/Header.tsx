@@ -58,8 +58,8 @@ export function Header() {
   }, [isMounted]);
 
   return (
-    <header className="bg-primary sticky top-0 z-50 flex h-16 w-full justify-center">
-      <div className="container-custom relative flex h-16 items-center justify-between">
+    <header className="sticky top-0 z-50 flex h-16 w-full justify-center bg-primary">
+      <div className="relative container-custom flex h-16 items-center justify-between">
         <Logo className="px-1" />
         <NavBar
           navItems={navItems}
@@ -69,18 +69,18 @@ export function Header() {
 
         <button
           type="button"
-          className="group line-height-0 focus-visible:ring-accentHover
-            focus-visible:ring-offset-foreground active:border-accentHover hover:border-accentHover
-            focus-visible:border-accentHover cursor-pointer border-none bg-transparent p-0
-            transition-colors outline-none focus-visible:ring-1 focus-visible:ring-offset-2
-            focus-visible:duration-0 lg:hidden"
+          className="group line-height-0 cursor-pointer border-none bg-transparent p-0
+            transition-colors outline-none hover:border-accentHover focus-visible:border-accentHover
+            focus-visible:ring-1 focus-visible:ring-accentHover focus-visible:ring-offset-2
+            focus-visible:ring-offset-foreground focus-visible:duration-0 active:border-accentHover
+            lg:hidden"
           onClick={openMenu}
           aria-expanded={isOpen}
         >
           <svg
-            className="stroke-background group-hover:stroke-accentHover
-              group-active:stroke-accentHover group-focus-visible:stroke-accentHover
-              transsition-colors pointer-events-none duration-300 group-focus-visible:duration-0"
+            className="transsition-colors pointer-events-none stroke-background duration-300
+              group-hover:stroke-accentHover group-focus-visible:stroke-accentHover
+              group-focus-visible:duration-0 group-active:stroke-accentHover"
             width="28"
             height="28"
           >
@@ -108,19 +108,18 @@ export function Header() {
               <button
                 type="button"
                 aria-label="close menu"
-                className="group line-height-0 focus-visible:ring-accentHover
-                  focus-visible:ring-offset-foreground hover:border-accentHover
-                  active:border-accentHover focus-visible:border-accentHover absolute top-6 right-6
-                  cursor-pointer border-none bg-transparent p-0 transition-colors outline-none
-                  focus-visible:ring-1 focus-visible:ring-offset-2 focus-visible:duration-0
-                  lg:hidden"
+                className="group line-height-0 absolute top-6 right-6 cursor-pointer border-none
+                  bg-transparent p-0 transition-colors outline-none hover:border-accentHover
+                  focus-visible:border-accentHover focus-visible:ring-1
+                  focus-visible:ring-accentHover focus-visible:ring-offset-2
+                  focus-visible:ring-offset-foreground focus-visible:duration-0
+                  active:border-accentHover lg:hidden"
                 onClick={closeMenu}
               >
                 <svg
-                  className="stroke-background group-hover:stroke-accentHover
-                    group-active:stroke-accentHover group-focus-visible:stroke-accentHover
-                    transsition-colors pointer-events-none duration-300
-                    group-focus-visible:duration-0"
+                  className="transsition-colors pointer-events-none stroke-background duration-300
+                    group-hover:stroke-accentHover group-focus-visible:stroke-accentHover
+                    group-focus-visible:duration-0 group-active:stroke-accentHover"
                   width="28"
                   height="28"
                 >
@@ -143,34 +142,32 @@ export function Header() {
                       href="https://www.instagram.com/rsalon.beautystudio?igsh=ZjJmdnMyNnF4b2F6"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
-                      className="group border-borderLink focus-visible:ring-accentHover
-                        focus-visible:ring-offset-foreground hover:border-accentHover
-                        active:border-accentHover focus:border-accentHover flex h-12 w-12
-                        items-center justify-center border transition-colors outline-none
-                        focus-visible:ring-1 focus-visible:ring-offset-2 focus-visible:duration-0"
+                      className="group flex h-12 w-12 items-center justify-center border
+                        border-borderLink transition-colors outline-none hover:border-accentHover
+                        focus:border-accentHover focus-visible:ring-1 focus-visible:ring-accentHover
+                        focus-visible:ring-offset-2 focus-visible:ring-offset-foreground
+                        focus-visible:duration-0 active:border-accentHover"
                     >
                       <svg
-                        className="stroke-grayCostom group-hover:stroke-accentHover
-                          group-active:stroke-accentHover group-focus:stroke-accentHover
-                          transsition-colors pointer-events-none h-5 w-5 duration-300
-                          group-focus-visible:duration-0"
+                        className="transsition-colors pointer-events-none h-5 w-5 stroke-grayCostom
+                          duration-300 group-hover:stroke-accentHover group-focus:stroke-accentHover
+                          group-focus-visible:duration-0 group-active:stroke-accentHover"
                       >
                         <use href="/assets/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                     <a
                       href="#"
-                      className="group border-borderLink focus-visible:ring-accentHover
-                        focus-visible:ring-offset-foreground hover:border-accentHover
-                        active:border-accentHover focus:border-accentHover flex h-12 w-12
-                        items-center justify-center border transition-colors outline-none
-                        focus-visible:ring-1 focus-visible:ring-offset-2 focus-visible:duration-0"
+                      className="group flex h-12 w-12 items-center justify-center border
+                        border-borderLink transition-colors outline-none hover:border-accentHover
+                        focus:border-accentHover focus-visible:ring-1 focus-visible:ring-accentHover
+                        focus-visible:ring-offset-2 focus-visible:ring-offset-foreground
+                        focus-visible:duration-0 active:border-accentHover"
                     >
                       <svg
-                        className="stroke-grayCostom group-hover:stroke-accentHover
-                          group-active:stroke-accentHover group-focus:stroke-accentHover
-                          transsition-colors pointer-events-none h-5 w-5 duration-300
-                          group-focus-visible:duration-0"
+                        className="transsition-colors pointer-events-none h-5 w-5 stroke-grayCostom
+                          duration-300 group-hover:stroke-accentHover group-focus:stroke-accentHover
+                          group-focus-visible:duration-0 group-active:stroke-accentHover"
                       >
                         <use href="/assets/sprite.svg#icon-telegram"></use>
                       </svg>

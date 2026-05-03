@@ -4,14 +4,14 @@ import { EducationInfoList } from "./EducationInfoList";
 export const EducationInfoContainer = () => {
   return (
     <div className="max-w-[544]">
-      <p className="text-accent uppercase tracking-widest">Для майстрів</p>
+      <p className="tracking-widest text-accent uppercase">Для майстрів</p>
       <h2
-        className="mt-4 font-accent italic font-light text-background text-3xl md:text-4xl
+        className="mt-4 font-accent text-3xl font-light text-background italic md:text-4xl
           lg:text-5xl"
       >
         Навчання та майстер-класи
       </h2>
-      <ul className="flex flex-col gap-y-6 mt-8 max-w-[544] text-grayCostom">
+      <ul className="mt-8 flex max-w-[544] flex-col gap-y-6 text-grayCostom">
         <li>
           <p>
             Передаємо свій досвід та техніки преміального нарощування волосся майстрам, які прагнуть
@@ -27,9 +27,9 @@ export const EducationInfoContainer = () => {
       </ul>
       <EducationInfoList />
       <Button
-        className="mt-10 uppercase focus-visible:ring-offset-foreground active:bg-accentHover
-          hover:bg-accentHover focus-visible:bg-accentHover active:text-primery/80
-          hover:text-primary/80 focus-visible::text-primary/80"
+        className="active:text-primery/80 focus-visible::text-primary/80 mt-10 uppercase
+          hover:bg-accentHover hover:text-primary/80 focus-visible:bg-accentHover
+          focus-visible:ring-offset-foreground active:bg-accentHover"
       >
         Записатися на консультацію
       </Button>

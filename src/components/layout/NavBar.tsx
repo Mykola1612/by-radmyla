@@ -36,15 +36,15 @@ export function NavBar({
 
   return (
     <nav aria-label="Navigation">
-      <ul className={`text-background flex flex-col ${className}`}>
+      <ul className={`flex flex-col text-background ${className}`}>
         {navItems.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`py-[5px] active:text-accent hover:text-accent focus-visible:text-accent
-              transition-colors duration-300 outline-none focus-visible:ring-2
-              focus-visible:ring-offset-2 focus-visible:ring-accent
-              focus-visible:ring-offset-foreground focus-visible:duration-0 ${classNamePadding}`}
+              className={`py-[5px] transition-colors duration-300 outline-none hover:text-accent
+              focus-visible:text-accent focus-visible:ring-2 focus-visible:ring-accent
+              focus-visible:ring-offset-2 focus-visible:ring-offset-foreground
+              focus-visible:duration-0 active:text-accent ${classNamePadding}`}
               onClick={(e) => handleScroll(e, item.href)}
               scroll={false}
             >

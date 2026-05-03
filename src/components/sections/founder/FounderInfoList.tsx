@@ -1,6 +1,6 @@
 export const FounderInfoList = () => {
   return (
-    <ul className="flex flex-col gap-y-6 mt-8 max-w-[544] text-info">
+    <ul className="mt-8 flex max-w-[544] flex-col gap-y-6 text-info">
       <li>
         <p>
           Понад <b className="text-primary">20 років досвіду </b> у сфері преміального нарощування
