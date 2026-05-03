@@ -20,11 +20,7 @@ export const HeroLink = () => {
   return (
     <Link
       href="/#hair"
-      className="block py-3 px-6 bg-accent text-background tracking-wider uppercase
-        focus-visible:ring-accentHover focus-visible:ring-offset-foreground hover:bg-accentHover
-        focus-visible::bg-accentHover hover:text-primary/80 focus-visible:text-primary/80
-        transition-colors outline-none focus-visible:ring-2 focus-visible:ring-offset-2
-        focus-visible:duration-0"
+      className="focus-visible::bg-accentHover block bg-accent px-6 py-3 tracking-wider text-background uppercase transition-colors outline-none hover:bg-accentHover hover:text-primary/80 focus-visible:text-primary/80 focus-visible:ring-2 focus-visible:ring-accentHover focus-visible:ring-offset-2 focus-visible:ring-offset-foreground focus-visible:duration-0 active:bg-accentHover active:text-primary/80"
       onClick={(e) => handleScroll(e)}
     >
       Дізнатися Більше
