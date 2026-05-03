@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 export function NavBar({
@@ -11,15 +12,40 @@ export function NavBar({
   classNamePadding?: string;
   onClick?: () => void;
 }) {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    if (href.includes("#")) {
+      const targetId = href.split("#")[1];
+      const elem = document.getElementById(targetId);
+
+      if (elem) {
+        e.preventDefault();
+
+        const offsetTop =
+          elem.getBoundingClientRect().top + window.scrollY - 64;
+
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+
+        if (onClick) onClick();
+      }
+    }
+  };
+
   return (
-    <nav>
+    <nav aria-label="Navigation">
       <ul className={`text-background flex flex-col  ${className}`}>
         {navItems.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`py-[5px] hover:text-accent  focus:text-accent  transition-colors duration-300 outline-none  focus-visible:ring-2  focus-visible:ring-offset-2 focus-visible:ring-accent   focus-visible:ring-offset-foreground  focus-visible:duration-0 ${classNamePadding}`}
-              onClick={onClick}
+              className={`py-[5px] hover:text-accent  focus-visible:text-accent  transition-colors duration-300 outline-none  focus-visible:ring-2  focus-visible:ring-offset-2 focus-visible:ring-accent   focus-visible:ring-offset-foreground  focus-visible:duration-0 ${classNamePadding}`}
+              onClick={(e) => handleScroll(e, item.href)}
+              scroll={false}
             >
               {item.label}
             </Link>

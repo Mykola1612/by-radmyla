@@ -5,11 +5,11 @@ import { NavBar } from "../NavBar";
 import { FocusTrap } from "focus-trap-react";
 
 const navItems = [
-  { label: "Нарощування волосся", href: "#hair" },
-  { label: "Hair Systems", href: "#systems" },
-  { label: "Засновниця", href: "#founder" },
-  { label: "Навчання", href: "#education" },
-  { label: "Контакти", href: "#contact" },
+  { label: "Нарощування волосся", href: "/#hair" },
+  { label: "Hair Systems", href: "/#systems" },
+  { label: "Засновниця", href: "/#founder" },
+  { label: "Навчання", href: "/#education" },
+  { label: "Контакти", href: "/#contact" },
 ];
 
 export function Header() {
@@ -72,12 +72,12 @@ export function Header() {
 
         <button
           type="button"
-          className="group p-0 border-none line-height-0 bg-transparent lg:hidden  cursor-pointer  focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
+          className="group p-0 border-none line-height-0 bg-transparent lg:hidden  cursor-pointer  focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus-visible:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
           onClick={openMenu}
           aria-expanded={isOpen}
         >
           <svg
-            className="stroke-background  group-hover:stroke-accentHover group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none group-focus-visible:duration-0"
+            className="stroke-background  group-hover:stroke-accentHover group-focus-visible:stroke-accentHover transsition-colors duration-300 pointer-events-none group-focus-visible:duration-0"
             width="28"
             height="28"
           >
@@ -103,11 +103,11 @@ export function Header() {
               <button
                 type="button"
                 aria-label="close menu"
-                className="absolute top-6 right-6 cursor-pointer group p-0 border-none line-height-0 bg-transparent lg:hidden   focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
+                className="absolute top-6 right-6 cursor-pointer group p-0 border-none line-height-0 bg-transparent lg:hidden   focus-visible:ring-accentHover focus-visible:ring-offset-foreground  hover:border-accentHover focus-visible:border-accentHover transition-colors outline-none  focus-visible:ring-1  focus-visible:ring-offset-2      focus-visible:duration-0 "
                 onClick={closeMenu}
               >
                 <svg
-                  className="stroke-background  group-hover:stroke-accentHover group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none group-focus-visible:duration-0"
+                  className="stroke-background  group-hover:stroke-accentHover group-focus-visible:stroke-accentHover transsition-colors duration-300 pointer-events-none group-focus-visible:duration-0"
                   width="28"
                   height="28"
                 >

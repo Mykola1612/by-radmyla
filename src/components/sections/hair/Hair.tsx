@@ -114,7 +114,7 @@ export const Hair = () => {
             </p>
           </div>
 
-          <Button className="uppercase bg-primary text-background  focus-visible:ring-offset-background  hover:bg-accentHover focus:bg-accentHover hover:text-primary/80 focus:text-primary/80 ">
+          <Button className="uppercase bg-primary text-background  focus-visible:ring-offset-background  hover:bg-accentHover focus-visible::bg-accentHover hover:text-primary/80 focus-visible::text-primary/80 ">
             Записатися на консультацію
           </Button>
         </div>
