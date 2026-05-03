@@ -26,9 +26,11 @@ export function NavBar({
         const offsetTop =
           elem.getBoundingClientRect().top + window.scrollY - 64;
 
+        const isMobile = window.innerWidth < 390;
+
         window.scrollTo({
           top: offsetTop,
-          behavior: "smooth",
+          behavior: isMobile ? "auto" : "smooth",
         });
 
         if (onClick) onClick();
