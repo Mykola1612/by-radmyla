@@ -1,11 +1,4 @@
-import {
-  Contact,
-  Education,
-  Founder,
-  Hair,
-  Hero,
-  HairSystems,
-} from "@/components/sections";
+import { Contact, Education, Founder, Hair, Hero, HairSystems } from "@/components/sections";
 
 export const Main = () => {
   return (

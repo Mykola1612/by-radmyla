@@ -12,10 +12,7 @@ export function NavBar({
   classNamePadding?: string;
   onClick?: () => void;
 }) {
-  const handleScroll = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string,
-  ) => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.includes("#")) {
       const targetId = href.split("#")[1];
       const elem = document.getElementById(targetId);
@@ -23,8 +20,7 @@ export function NavBar({
       if (elem) {
         e.preventDefault();
 
-        const offsetTop =
-          elem.getBoundingClientRect().top + window.scrollY - 64;
+        const offsetTop = elem.getBoundingClientRect().top + window.scrollY - 64;
 
         const isMobile = window.innerWidth < 390;
 
@@ -40,12 +36,15 @@ export function NavBar({
 
   return (
     <nav aria-label="Navigation">
-      <ul className={`text-background flex flex-col  ${className}`}>
+      <ul className={`text-background flex flex-col ${className}`}>
         {navItems.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`py-[5px] hover:text-accent  focus-visible:text-accent  transition-colors duration-300 outline-none  focus-visible:ring-2  focus-visible:ring-offset-2 focus-visible:ring-accent   focus-visible:ring-offset-foreground  focus-visible:duration-0 ${classNamePadding}`}
+              className={`py-[5px] hover:text-accent focus-visible:text-accent transition-colors
+              duration-300 outline-none focus-visible:ring-2 focus-visible:ring-offset-2
+              focus-visible:ring-accent focus-visible:ring-offset-foreground
+              focus-visible:duration-0 ${classNamePadding}`}
               onClick={(e) => handleScroll(e, item.href)}
               scroll={false}
             >
