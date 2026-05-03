@@ -159,8 +159,8 @@ export const Hair = () => {
 
           <Button
             className="uppercase bg-primary text-background focus-visible:ring-offset-background
-              hover:bg-accentHover focus-visible::bg-accentHover hover:text-primary/80
-              focus-visible::text-primary/80"
+              active:bg-accentHover hover:bg-accentHover focus-visible::bg-accentHover
+              active:text-primary/80 hover:text-primary/80 focus-visible::text-primary/80"
           >
             Записатися на консультацію
           </Button>

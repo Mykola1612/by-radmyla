@@ -32,14 +32,14 @@ export const Footer = () => {
           nooper noreferrer nofollow"
               className="group border border-borderLink w-12 h-12 flex justify-center items-center
                 focus-visible:ring-accentHover focus-visible:ring-offset-foreground
-                hover:border-accentHover focus-visible::border-accentHover transition-colors
-                outline-none focus-visible:ring-1 focus-visible:ring-offset-2
+                active:border-accentHover hover:border-accentHover focus-visible::border-accentHover
+                transition-colors outline-none focus-visible:ring-1 focus-visible:ring-offset-2
                 focus-visible:duration-0"
             >
               <svg
                 className="w-5 h-5 stroke-grayCostom group-hover:stroke-accentHover
-                  group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none
-                  group-focus-visible:duration-0"
+                  group-active:stroke-accentHover group-focus:stroke-accentHover transsition-colors
+                  duration-300 pointer-events-none group-focus-visible:duration-0"
               >
                 <use href="/assets/sprite.svg#icon-instagram"></use>
               </svg>
@@ -48,14 +48,14 @@ export const Footer = () => {
               href=""
               className="group border border-borderLink w-12 h-12 flex justify-center items-center
                 focus-visible:ring-accentHover focus-visible:ring-offset-foreground
-                hover:border-accentHover focus-visible::border-accentHover transition-colors
-                outline-none focus-visible:ring-1 focus-visible:ring-offset-2
+                active:border-accentHover hover:border-accentHover focus-visible::border-accentHover
+                transition-colors outline-none focus-visible:ring-1 focus-visible:ring-offset-2
                 focus-visible:duration-0"
             >
               <svg
                 className="w-5 h-5 stroke-grayCostom group-hover:stroke-accentHover
-                  group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none
-                  group-focus-visible:duration-0"
+                  group-active:stroke-accentHover group-focus:stroke-accentHover transsition-colors
+                  duration-300 pointer-events-none group-focus-visible:duration-0"
               >
                 <use href="/assets/sprite.svg#icon-telegram"></use>
               </svg>
@@ -64,14 +64,14 @@ export const Footer = () => {
               href="mailto:rsalonpl@gmail.com"
               className="group border border-borderLink w-12 h-12 flex justify-center items-center
                 focus-visible:ring-accentHover focus-visible:ring-offset-foreground
-                hover:border-accentHover focus-visible::border-accentHover transition-colors
-                outline-none focus-visible:ring-1 focus-visible:ring-offset-2
+                active:border-accentHover hover:border-accentHover focus-visible::border-accentHover
+                transition-colors outline-none focus-visible:ring-1 focus-visible:ring-offset-2
                 focus-visible:duration-0"
             >
               <svg
                 className="w-5 h-5 stroke-grayCostom group-hover:stroke-accentHover
-                  group-focus:stroke-accentHover transsition-colors duration-300 pointer-events-none
-                  group-focus-visible:duration-0"
+                  group-active:stroke-accentHover group-focus:stroke-accentHover transsition-colors
+                  duration-300 pointer-events-none group-focus-visible:duration-0"
               >
                 <use href="/assets/sprite.svg#icon-email"></use>
               </svg>

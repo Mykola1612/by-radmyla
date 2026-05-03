@@ -27,8 +27,9 @@ export const EducationInfoContainer = () => {
       </ul>
       <EducationInfoList />
       <Button
-        className="mt-10 uppercase focus-visible:ring-offset-foreground hover:bg-accentHover
-          focus-visible::bg-accentHover hover:text-primary/80 focus-visible::text-primary/80"
+        className="mt-10 uppercase focus-visible:ring-offset-foreground active:bg-accentHover
+          hover:bg-accentHover focus-visible:bg-accentHover active:text-primery/80
+          hover:text-primary/80 focus-visible::text-primary/80"
       >
         Записатися на консультацію
       </Button>

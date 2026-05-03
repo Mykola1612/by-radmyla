@@ -1,15 +1,17 @@
 "use client";
 import Link from "next/link";
 
-export function Logo({ className = "" }: { className?: string }) {
+export function Logo({ className = "", onClick }: { className?: string; onClick?: () => void }) {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (window.location.pathname === "/") {
       e.preventDefault();
+      const isMobile = window.innerWidth < 390;
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: isMobile ? "auto" : "smooth",
       });
     }
+    if (onClick) onClick();
   };
 
   return (
@@ -25,7 +27,7 @@ export function Logo({ className = "" }: { className?: string }) {
       <div className="flex">
         <p className="text-background text-2xl">R</p>
         <p
-          className="text-accent text-2xl group-hover:text-background
+          className="text-accent text-2xl group-active:text-background group-hover:text-background
             group-focus-visible:text-background group-focus-visible:duration-0 transition-colors
             duration-300"
         >
