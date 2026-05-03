@@ -49,14 +49,4 @@ body {
   a {
     display: block;
   }
-  @media (hover: none) {
-    *:hover {
-      /* Принудительно сбрасываем цвета и эффекты к исходным */
-      color: inherit !important;
-      background-color: transparent !important;
-      opacity: 1 !important;
-      transform: none !important;
-      transition: none !important;
-    }
-  }
 }
