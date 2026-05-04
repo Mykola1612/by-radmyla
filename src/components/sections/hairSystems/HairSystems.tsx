@@ -140,10 +140,9 @@ export const HairSystems = () => {
           </div>
 
           <Button
-            className="uppercase [@media(hover:hover)]:hover:bg-accentHover
-              [@media(hover:hover)]:hover:text-primary/80 focus-visible:bg-accentHover
-              focus-visible:text-primary/80 focus-visible:ring-offset-foreground
-              active:bg-accentHover active:text-primary/80"
+            className="uppercase hover:bg-accentHover hover:text-primary/80
+              focus-visible:bg-accentHover focus-visible:text-primary/80
+              focus-visible:ring-offset-foreground active:bg-accentHover active:text-primary/80"
           >
             Записатися на консультацію
           </Button>
