@@ -41,10 +41,11 @@ export function NavBar({
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`py-[5px] transition-colors duration-300 outline-none hover:text-accent
-              focus-visible:text-accent focus-visible:ring-2 focus-visible:ring-accent
-              focus-visible:ring-offset-2 focus-visible:ring-offset-foreground
-              focus-visible:duration-0 active:text-accent ${classNamePadding}`}
+              className={`py-[5px] transition-colors duration-300 outline-none
+              [@media(hover:hover)]:hover:text-accent focus-visible:text-accent focus-visible:ring-2
+              focus-visible:ring-accent focus-visible:ring-offset-2
+              focus-visible:ring-offset-foreground focus-visible:duration-0 active:text-accent
+              ${classNamePadding}`}
               onClick={(e) => handleScroll(e, item.href)}
               scroll={false}
             >

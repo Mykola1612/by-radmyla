@@ -30,7 +30,7 @@ export const Footer = () => {
               target="_blank"
               rel="
           nooper noreferrer nofollow"
-              className="group focus-visible::border-accentHover flex h-12 w-12 items-center
+              className="group focus-visible:border-accentHover flex h-12 w-12 items-center
                 justify-center border border-borderLink transition-colors outline-none
                 hover:border-accentHover focus-visible:ring-1 focus-visible:ring-accentHover
                 focus-visible:ring-offset-2 focus-visible:ring-offset-foreground
@@ -46,7 +46,7 @@ export const Footer = () => {
             </a>
             <a
               href=""
-              className="group focus-visible::border-accentHover flex h-12 w-12 items-center
+              className="group focus-visible:border-accentHover flex h-12 w-12 items-center
                 justify-center border border-borderLink transition-colors outline-none
                 hover:border-accentHover focus-visible:ring-1 focus-visible:ring-accentHover
                 focus-visible:ring-offset-2 focus-visible:ring-offset-foreground
@@ -62,7 +62,7 @@ export const Footer = () => {
             </a>
             <a
               href="mailto:rsalonpl@gmail.com"
-              className="group focus-visible::border-accentHover flex h-12 w-12 items-center
+              className="group focus-visible:border-accentHover flex h-12 w-12 items-center
                 justify-center border border-borderLink transition-colors outline-none
                 hover:border-accentHover focus-visible:ring-1 focus-visible:ring-accentHover
                 focus-visible:ring-offset-2 focus-visible:ring-offset-foreground
