@@ -66,3 +66,19 @@ body {
     display: block;
   }
 }
+
+@media (any-hover: none) {
+  *:hover {
+    /* unset возвращает свойства к тем, что были ДО ховера */
+    color: inherit !important;
+    background-color: inherit !important;
+    border-color: inherit !important;
+    box-shadow: none !important;
+    transform: none !important;
+    /* Добавь сюда другие свойства, если используешь их в ховерах */
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
