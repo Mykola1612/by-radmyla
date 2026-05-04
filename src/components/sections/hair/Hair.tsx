@@ -158,7 +158,7 @@ export const Hair = () => {
           </div>
 
           <Button
-            className="focus-visible::bg-accentHover focus-visible::text-primary/80 bg-primary
+            className="focus-visible::bg-accentHover focus-visible:text-primary/80 bg-primary
               text-background uppercase
               [@media(hover:hover)_and_(pointer:fine)]:hover:bg-accentHover
               [@media(hover:hover)_and_(pointer:fine)]:hover:text-primary/80
