@@ -27,7 +27,8 @@ export function Logo({ className = "", onClick }: { className?: string; onClick?
       <div className="flex">
         <p className="text-2xl text-background">R</p>
         <p
-          className="text-2xl text-accent transition-colors duration-300 group-hover:text-background
+          className="text-2xl text-accent transition-colors duration-300
+            [@media(hover:hover)_and_(pointer:fine)]:group-hover:text-background
             group-focus-visible:text-background group-focus-visible:duration-0
             group-active:text-background"
         >
