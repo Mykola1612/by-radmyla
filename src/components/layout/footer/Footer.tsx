@@ -91,7 +91,7 @@ export const Footer = () => {
       <div className="container-custom">
         <div
           className="mt-12 flex flex-col items-center justify-center gap-y-4 border-t
-            border-accent/40 pt-8 text-center text-grayCostom md:flex-row md:justify-between
+            border-borderLink pt-8 text-center text-grayCostom md:flex-row md:justify-between
             md:gap-y-0"
         >
           <p> © 2026 RSalon. Всі права захищені.</p>
