@@ -50,19 +50,3 @@ body {
     display: block;
   }
 }
-
-@custom-variant hover (@media (hover: hover) and (pointer: fine));
-
-/* @media (any-hover: none) {
-  *:hover {
-    color: inherit !important;
-    background-color: inherit !important;
-    border-color: inherit !important;
-    box-shadow: none !important;
-    transform: none !important;
-  }
-
-  * {
-    -webkit-tap-highlight-color: transparent;
-  }
-} */
