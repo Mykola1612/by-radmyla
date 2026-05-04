@@ -33,22 +33,6 @@
   padding-inline: 24px; /* Отступы по бокам (px-4) */
 }
 
-@custom-variant hover-safe {
-  @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      @slot;
-    }
-  }
-}
-
-@custom-variant active-touch {
-  @media (hover: none) {
-    &:active {
-      @slot;
-    }
-  }
-}
-
 html {
   scrollbar-gutter: stable;
 }
@@ -66,6 +50,8 @@ body {
     display: block;
   }
 }
+
+@custom-variant hover (@media (hover: hover) and (pointer: fine));
 
 /* @media (any-hover: none) {
   *:hover {
